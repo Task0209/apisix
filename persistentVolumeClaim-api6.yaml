@@ -1,0 +1,12 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: apisix-claim
+  namespace: apisix
+spec:
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: my-local-storage
+  resources:
+    requests:
+      storage: 0.5Gi
